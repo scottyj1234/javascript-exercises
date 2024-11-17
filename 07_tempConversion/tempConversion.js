@@ -11,6 +11,16 @@ const convertToCelsius = function(degreesFahrenheit) {
 };
 
 const convertToFahrenheit = function(degreesCelsius) {
+
+  if (!isFinite(degreesCelsius)) {
+    return "ERROR";
+  }
+
+  const fullResult = degreesCelsius * 9 / 5 + 32;
+
+  // round to 1 decimal
+  return Math.round(fullResult * 10) / 10;
+
 };
 
 // Do not edit below this line
