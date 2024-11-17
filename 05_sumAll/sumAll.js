@@ -1,4 +1,7 @@
 const sumAll = function(firstInt, secondInt) {
+  if(!(Number.isInteger(firstInt) && Number.isInteger(secondInt))) {
+    return "ERROR";
+  }
   const lowerInt = Math.min(firstInt, secondInt);
   const upperInt = Math.max(firstInt, secondInt);
   let result = 0;
