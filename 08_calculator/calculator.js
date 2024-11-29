@@ -11,7 +11,7 @@ const sum = function(arr) {
 };
 
 const multiply = function(arr) {
-  return arr.reduce((acc, val) => acc * val, 0)
+  return arr.reduce((acc, val) => acc * val, 1)
 };
 
 const power = function(a, b) {
@@ -19,7 +19,7 @@ const power = function(a, b) {
 };
 
 const factorial = function(val) {
-	if (val === 1) return 1;
+	if (val <= 1) return 1;
   return val * factorial(val - 1);
 };
 
