@@ -1,5 +1,13 @@
-const fibonacci = function(fibIndex) {
-  if (fibIndex <= 0) {
+const fibonacci = function(fib) {
+  fibIndex = Number(fib);
+
+  if (!Number.isInteger(fibIndex)) return "OOPS";
+
+  if (fibIndex < 0) {
+    return "OOPS";
+  }
+
+  if (fibIndex === 0) {
     return 0;
   }
 
