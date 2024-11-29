@@ -6,8 +6,9 @@ const palindromes = function (str) {
   });
 
   for (let i = 0; i <= strArrayOnlyCharacters.length; ++i) {
-    const frontLetter = strArrayOnlyCharacters[i];
-    const backLetter = strArrayOnlyCharacters[-1 * (i + 1)];
+    const frontLetter = strArrayOnlyCharacters.at(i);
+    const backLetter = strArrayOnlyCharacters.at(-1 * (i + 1));
+    console.log(`${frontLetter}; ${backLetter}`);
     if (frontLetter !== backLetter) {
       return false;
     }
