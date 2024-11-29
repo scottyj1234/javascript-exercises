@@ -3,7 +3,7 @@ const findTheOldest = function(people) {
     let age = 0;
 
     if (person.yearOfDeath === undefined) {
-      age = Date().getFullYear() - person.yearOfBirth;
+      age = new Date().getFullYear() - person.yearOfBirth;
     } else {
       age = person.yearOfDeath - person.yearOfBirth;
     }
